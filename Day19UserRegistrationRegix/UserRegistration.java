@@ -26,5 +26,16 @@ public class UserRegistration {
 	    		System.out.println("LastName is Invalid");
 	    	}
 	       }
+	 
+	 public static void validateEmail(String emailId) {
+	    	String email = "^[a-zA-Z0-9_-]+(?:\\.[a-zA-Z0-9_+-]+)*@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$";
+	    	Pattern pattern = Pattern.compile(email);
+	    	if(pattern.matcher(emailId).matches()) {
+	    		System.out.println(" Email is Valid");
+	    	}else
+	    	{
+	    		System.out.println("Email is Invalid");
+	    	}
+	       }
 		 
 }

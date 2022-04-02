@@ -13,7 +13,11 @@ public class Main {
 		
 		System.out.println("Enter the LastName");
 		String lastname = sc.nextLine();
-		userregistration.validateFirstName(lastname);
+		userregistration.validateLastName(lastname);
+		
+		System.out.println("Enter the Email");
+		String emailId = sc.nextLine();
+		userregistration.validateEmail(emailId);
 		
 	}	
 }
