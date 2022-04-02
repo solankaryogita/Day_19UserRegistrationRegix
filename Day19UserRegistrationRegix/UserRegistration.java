@@ -9,10 +9,22 @@ public class UserRegistration {
     	String nameRegix = "^[A-Z][a-z]{2,}$";
     	Pattern pattern = Pattern.compile(nameRegix);
     	if(pattern.matcher(firstName).matches()) {
-    		System.out.println("Valid");
+    		System.out.println(" FirstName is Valid");
     	}else
     	{
-    		System.out.println("Invalid");
+    		System.out.println("FirstName is Invalid");
     	}
        }
+	 
+	 public static void validateLastName(String lastname) {
+	    	String nameRegix = "^[A-Z][a-z]{2,}$";
+	    	Pattern pattern = Pattern.compile(nameRegix);
+	    	if(pattern.matcher(lastname).matches()) {
+	    		System.out.println(" LastName is Valid");
+	    	}else
+	    	{
+	    		System.out.println("LastName is Invalid");
+	    	}
+	       }
+		 
 }
