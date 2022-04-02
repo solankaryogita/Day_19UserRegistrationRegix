@@ -19,5 +19,9 @@ public class Main {
 		String emailId = sc.nextLine();
 		userregistration.validateEmail(emailId);
 		
+		System.out.println("Enter the Mobile No");
+		String mobileNo = sc.nextLine();
+		userregistration.validateMobileNo(mobileNo);
+		
 	}	
 }
