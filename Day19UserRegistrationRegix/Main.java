@@ -26,6 +26,7 @@ public class Main {
 		System.out.println("Enter the Password");
 		String Password = sc.nextLine();
 		userregistration.validatePassword(Password);
+		userregistration.register();
 		
 		
 	}	

@@ -48,7 +48,7 @@ public class UserRegistration {
 	       }
 	 
 	 public static void validatePassword(String Password) {
-	    	String pass =  "^([0-9a-zA-Z]){8}";
+	    	String pass = "(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_-])[a-zA-Z0-9].{8,}$";
 	    	Pattern pattern = Pattern.compile(pass);
 	    	if(pattern.matcher(Password).matches()) {
 	    		System.out.println("Password is Valid");
@@ -57,6 +57,8 @@ public class UserRegistration {
 	    		System.out.println("Password is Invalid");
 	    	}
 	       }
-		 
-		 
+	 
+		 public static void register() {
+			 System.out.println("Registered Successfully..");
+		 }
 }
