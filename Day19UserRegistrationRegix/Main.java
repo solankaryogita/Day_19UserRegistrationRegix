@@ -23,5 +23,10 @@ public class Main {
 		String mobileNo = sc.nextLine();
 		userregistration.validateMobileNo(mobileNo);
 		
+		System.out.println("Enter the Password");
+		String Password = sc.nextLine();
+		userregistration.validatePassword(Password);
+		
+		
 	}	
 }

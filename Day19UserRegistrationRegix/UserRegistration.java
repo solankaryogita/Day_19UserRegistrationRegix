@@ -1,5 +1,4 @@
 package com.Bridgelabz.Day19UserRegistrationRegix;
-
 import java.util.regex.Pattern;
 
 public class UserRegistration {
@@ -47,5 +46,17 @@ public class UserRegistration {
 	    		System.out.println("Mobile no is Invalid");
 	    	}
 	       }
+	 
+	 public static void validatePassword(String Password) {
+	    	String pass =  "^([0-9a-zA-Z]){8}";
+	    	Pattern pattern = Pattern.compile(pass);
+	    	if(pattern.matcher(Password).matches()) {
+	    		System.out.println("Password is Valid");
+	    	}else
+	    	{
+	    		System.out.println("Password is Invalid");
+	    	}
+	       }
+		 
 		 
 }
