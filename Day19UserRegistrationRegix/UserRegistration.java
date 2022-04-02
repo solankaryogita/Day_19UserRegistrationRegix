@@ -61,5 +61,4 @@ public class UserRegistration {
 		 public static void register() {
 			 System.out.println("Registered Successfully..");
 		 }
-
 }
